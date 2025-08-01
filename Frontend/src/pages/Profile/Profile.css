@@ -1,0 +1,103 @@
+.profile{
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.profile .profile_img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #5db62c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: #f2fbea;
+    cursor: pointer;
+    margin-bottom: 55px;
+}
+.profile .profile_name, .profile .profile_email{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profile_name h3, .profile_email h3{
+    
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+.profile_name p, .profile_email p{
+    width: 85%;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    border: 0.05rem solid var(--primary-text-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.profile .profile_options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile .change_pass,.profile .delete_account{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.profile .change_pass{
+    border: 0.10rem solid #5db62c;
+    background-color: rgba(93, 182, 44,0.5);
+    color: var(--primary-text-color);
+}
+.profile .delete_account{
+    border: 0.10rem solid #ff0000;
+    background-color: rgba(255, 0, 0,0.5);
+    color: var(--primary-text-color);
+}
+
+@media screen and (max-width : 768px){
+    
+    .profile .profile_name, .profile .profile_email{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        gap: 10px;
+    }
+    .profile .profile_img{
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
+    }
+    .profile .profile_name h3, .profile .profile_email h3{
+        font-size: 21px;
+        width: 85%;
+    }
+    .profile .profile_name p, .profile .profile_email p{
+        font-size: 18px;
+    }
+    .profile .profile_options{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 80px;
+        /* background-color: #ff0000; */
+        width: 60%;
+    }
+    .profile .change_pass,.profile .delete_account{
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+}

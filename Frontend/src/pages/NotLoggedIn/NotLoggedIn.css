@@ -1,0 +1,58 @@
+.notsignin{
+    height: 100vh;
+    padding-top: 150px;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+.notsignin img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+.notsignin p{
+    text-align: center;
+    font-size: 18px;
+}
+.notsignin span{
+    font-size: 40px;
+    font-weight: 500;
+}
+.not_controlls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.not_controlls button{
+    padding: 8px 70px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5db62c;
+    color: #f2fbea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 767px){
+    .notsignin img{
+        width: 300px;
+        height: 250px;
+    }
+    .notsignin p{
+        padding-top: 80px;
+    }
+    .notsignin span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+}

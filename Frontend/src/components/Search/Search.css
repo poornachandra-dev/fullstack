@@ -1,0 +1,97 @@
+.search_wrapper{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 50px;
+    gap: 30px;
+    backdrop-filter: blur(20px);
+    z-index: 28;
+}
+.search_wrapper .search_close{
+    background-color: var(--main-color);
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.search_wrapper .search_box{
+    /* margin-top: 100px; */
+    width: 70%;
+    height: 50px;
+    padding-left: 15px;
+    background-color: #f2fbea;
+    border-radius: 10px;
+    animation: slideDownWithOpacity .3s ease;
+}
+
+.search_box form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.search_box input{
+    height: 100%;
+    width: 84%;
+    font-size: 20px;
+    padding-block: 10px;
+    border: none;
+    outline: none;
+    background: none;
+}
+.search_box ion-icon{
+    font-size: 20px;
+}
+.search_box ion-icon:nth-child(3){
+    cursor: pointer;
+}
+
+.search_box button{
+    margin: 5px;
+    margin-left: auto;
+    padding-inline: 20px;
+    height: calc(100% - 11px);
+    background-color: #5db62c;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.search_box button span{
+    display: block;
+}
+.search_box button .srch_icon{
+    display: none;
+}
+
+@media screen and (max-width : 767px){
+    .search_wrapper .search_box{
+        width: 90%;
+    }
+
+    .srch_icon{
+        display: none;
+    }
+    
+    .search_box button span{
+        display: none;
+    }
+    .search_box button .srch_icon{
+        display: block;
+    }
+}

@@ -1,0 +1,123 @@
+.myuploads_container {
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    min-height: 100vh;
+}
+
+
+.myuploads_container h2 {
+    width: 100%;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    padding-left: 80px;
+}
+
+.myuploads_container .images_list {
+    max-width: 90%;
+    gap: 20px;
+    columns: 5 320px;
+}
+.images_list .image{
+    position: relative;
+}
+
+.myuploads_container .images_list .image .img_dwn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.image .img_dwn ion-icon {
+    font-size: 20px;
+}
+
+.myuploads_container .images_list .image:hover .img_dwn,
+.myuploads_container .images_list .image:hover .img_delete {
+    opacity: 1;
+}
+
+.myuploads_container .images_list .image .likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* .myuploads_container .images_list .image ion-icon{
+    font-size: 15px;
+} */
+
+.myuploads_container .img_delete {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    background-color: red;
+    color: #fff;
+    opacity: 0;
+}
+
+.img_delete ion-icon {
+    font-size: 20px !important;
+}
+
+
+
+
+
+@media screen and (max-width : 767px) {
+    .myuploads_container .alert {
+        width: 70%;
+        top: 90px;
+    }
+
+    .myuploads_container h2 {
+        font-size: 55px;
+        letter-spacing: 5px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .myuploads_container .images_list {
+        max-width: 90%;
+        gap: 20px;
+        columns: 5 240px;
+    }
+
+    .myuploads_container .images_list .image .img_dwn {
+        opacity: 1;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        font-size: 18px;
+    }
+}

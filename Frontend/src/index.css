@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+  --main-color: #5db62c;
+  --background-color: #f2fbea;
+  --secondary-background-color: #e2fcce;
+  --primary-text-color: #18360d;
+  --secondary-text-color: #5db62c;
+  --button-text-color: #fff;
+  --loading-color: #d0f3b6;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--background-color);
+  position: relative;
+}
+body.dark_mode{
+  --main-color: #7acc47;        
+  --background-color: #1a1f17; 
+  --secondary-background-color: #12290a; 
+  --primary-text-color: #f2fbea; 
+  --secondary-text-color: #7cd14a;
+  --loading-color: #325617;
+}
+body.popup{
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.load svg{
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  animation: load 1.5s linear infinite;
+  
+}
+
+.error{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.10rem solid #ff0000;
+  background-color: rgba(255, 0, 0,0.5);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  padding-block: 20px;
+  margin-inline: auto;
+}
+
+
+
+
+/* animations */
+
+@keyframes load {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes slideDownWithOpacity {
+  from{
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes img-loading {
+  0% { background-color: #7bc442; }
+  50% { background-color: #319322; }
+  100% { background-color: #7bc442; }
+}
+
+@keyframes likeAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

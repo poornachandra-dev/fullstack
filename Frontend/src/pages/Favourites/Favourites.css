@@ -1,0 +1,39 @@
+.favourites{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    min-height: 100vh;
+}
+
+.favourites h2{
+    width: 100%;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-text-color);
+    padding-left: 80px;
+}
+
+.favourites .images_list{
+    max-width: 90%;
+    gap: 20px;
+    columns: 5 320px;
+}
+
+@media screen and (max-width : 767px){
+    .favourites h2{
+        font-size: 55px;
+        letter-spacing: 5px;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .favourites .images_list{
+        max-width: 90%;
+        gap: 20px;
+        columns: 5 240px;
+    }
+}
