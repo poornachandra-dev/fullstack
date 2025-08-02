@@ -5,8 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props)=>{
     
-    // const url = 'http://localhost:3000'
-    const url = 'https://artspire-backend.onrender.com'
+    const url = 'http://localhost:3000'
     const [token,setToken] = useState("");
     const [username,setUsername] = useState("");
     const [popUp,setPopUp] = useState(false);
@@ -63,3 +62,4 @@ const StoreContextProvider = (props)=>{
 }
 
 export default StoreContextProvider;
+
